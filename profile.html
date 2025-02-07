@@ -11,27 +11,29 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         /* Increase font size for the heading */
-        .projects-category h3 {
-            font-size: 2.5rem;
+        /* Style for the container of project boxes */
+        .projects-category {
+            display: flex;
+            flex-wrap: wrap;  /* Allow the project boxes to wrap to the next row */
+            justify-content: space-around;  /* Space out the boxes evenly */
         }
 
-        /* Style for the project boxes */
-        /* Style for the project boxes */
-        /* Style for the project boxes */
+        /* Style for the individual project boxes */
         .project-box {
             border: 2px solid #ccc;
             padding: 20px;
-            margin: 0;
+            margin: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;  /* Fixed width for each project box */
-            height: 300px; /* Fixed height for each project box */
+            width: 30%;  /* Each box will take 30% of the container's width */
+            height: 300px; /* Fixed height */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            box-sizing: border-box; /* Ensures padding does not affect the width */
         }
 
-        /* Style for the image within the project box */
+        /* Style for the image inside the project box */
         .project-box img {
             width: 100%;   /* Ensure image fills the width of the box */
             height: 100%;  /* Ensure image fills the height of the box */
@@ -54,6 +56,7 @@
             font-size: 1.1rem;
             margin-bottom: 10px;
         }
+
 
         .btn {
             background-color: #4CAF50;
