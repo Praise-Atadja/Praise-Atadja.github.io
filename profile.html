@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="profile.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
-        /* Increase font size for the heading */
-        .projects-category h3 {
-            font-size: 2.5rem;
+        /* Style for the projects container */
+        .projects-category {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+            gap: 20px; /* Adds space between the project boxes */
+            margin-bottom: 40px; /* Adds space below each project category */
         }
 
-        /* Style for the project boxes */
         /* Style for the project boxes */
         .project-box {
             border: 2px solid #ccc;
             padding: 20px;
-            margin: 20px;
+            margin: 0; /* Remove margin as grid takes care of spacing */
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             aspect-ratio: 1; /* Ensures a square aspect ratio */
