@@ -16,18 +16,31 @@
         }
 
         /* Style for the project boxes */
+        /* Style for the project boxes */
         .project-box {
             border: 2px solid #ccc;
             padding: 20px;
             margin: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            aspect-ratio: 1; /* Ensures a square aspect ratio */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
+        /* Ensure the image maintains its aspect ratio inside the square box */
         .project-box img {
             width: 100%;
             height: auto;
             border-radius: 8px;
+            object-fit: cover; /* Ensures the image fits within the square without distortion */
+        }
+
+        /* Content style for the project inside the box */
+        .project-content {
+            padding-top: 10px;
+            text-align: center;
         }
 
         .project-content h4 {
