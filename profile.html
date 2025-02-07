@@ -17,24 +17,26 @@
 
         /* Style for the project boxes */
         /* Style for the project boxes */
+        /* Style for the project boxes */
         .project-box {
             border: 2px solid #ccc;
             padding: 20px;
-            margin: 20px;
+            margin: 0;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            aspect-ratio: 1; /* Ensures a square aspect ratio */
+            width: 300px;  /* Fixed width for each project box */
+            height: 300px; /* Fixed height for each project box */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
-        /* Ensure the image maintains its aspect ratio inside the square box */
+        /* Style for the image within the project box */
         .project-box img {
-            width: 50%;
-            height: auto;
+            width: 100%;   /* Ensure image fills the width of the box */
+            height: 100%;  /* Ensure image fills the height of the box */
             border-radius: 8px;
-            object-fit: cover; /* Ensures the image fits within the square without distortion */
+            object-fit: cover; /* Ensures the image fits within the box without distortion */
         }
 
         /* Content style for the project inside the box */
