@@ -42,33 +42,23 @@
             text-align: center;  /* Align the text to the center */
             text-transform: uppercase;  /* Capitalize the text */
         }
-
-        /* Styling for the project boxes */
-        .projects-row {
-            display: flex;
-            justify-content: space-between; /* Ensures even spacing between the boxes */
-            margin-bottom: 30px;  /* Adds space below each row */
-        }
-
-        .project-box {
-            width: 30%;  /* Each box takes up about 1/3 of the row */
-            margin-bottom: 20px;
-            border: 2px solid #ccc;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
+        /* Style for the image inside the project box */
         .project-box img {
-            width: 100%;
-            height: 200px;  /* Fixed height for images */
+            width: 100%;   /* Ensure image fills the width of the box */
+            height: 100%;  /* Ensure image fills the height of the box */
             border-radius: 8px;
-            object-fit: cover;
+            object-fit: cover; /* Ensures the image fits within the box without distortion */
+        }
+
+        /* Content style for the project inside the box */
+        .project-content {
+            padding-top: 10px;
+            text-align: center;
         }
 
         .project-content h4 {
-            font-size: 1.5rem;
-            margin-top: 15px;
+            font-size: 1.8rem;
+            margin: 15px 0;
         }
 
         .project-content p {
@@ -76,16 +66,14 @@
             margin-bottom: 10px;
         }
 
+
         .btn {
-            display: inline-block;
-            background-color: #007BFF;
+            background-color: #4CAF50;
             color: white;
             padding: 10px 15px;
-            border-radius: 5px;
             text-decoration: none;
-            font-weight: bold;
+            border-radius: 5px;
         }
-
 
         .btn:hover {
             background-color: #45a049;
